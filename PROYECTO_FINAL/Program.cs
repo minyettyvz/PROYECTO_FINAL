@@ -18,7 +18,7 @@ namespace PROYECTO_FINAL
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("---------------------------------------------------------------------");
 
-           
+            Agenda agenda = new Agenda();//CREANDO VARIABLE Y LLAMANDO ARCHIVO
 
             do
             {
@@ -35,7 +35,7 @@ namespace PROYECTO_FINAL
                 switch (opcionMenu) {
                     case "1":
                         {
-                            Console.WriteLine("APARTADO DE AGENDA");
+                            agenda.menuAgenda();
                             break;
                         }
                     case "2":
