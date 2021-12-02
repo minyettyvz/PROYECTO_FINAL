@@ -10,7 +10,8 @@ namespace PROYECTO_FINAL
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("klk"); 
+            Console.WriteLine("klk2"); 
+
         }
     }
 }
