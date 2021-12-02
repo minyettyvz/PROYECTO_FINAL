@@ -10,6 +10,7 @@ namespace PROYECTO_FINAL
     {
         static void Main(string[] args)
         {
+            string opcionMenu;
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("---------------------------------------------------------------------");
             Console.ForegroundColor = ConsoleColor.Red;
@@ -17,12 +18,52 @@ namespace PROYECTO_FINAL
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("---------------------------------------------------------------------");
 
-            Console.WriteLine("1:AGENDA");
-            Console.WriteLine("2:CONVERSOR DE UNIDADES");
-            Console.WriteLine("3:CALCULADORA");
-            Console.WriteLine("0:SALIR");
-            Console.WriteLine("----------------------------------------------------------------------");
-            Console.Write("************DIGITE SOLO EL NUMERO DE SU OPCION DESEADA**************:");
+           
+
+            do
+            {
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("1:AGENDA");
+                Console.WriteLine("2:CONVERSOR DE UNIDADES");
+                Console.WriteLine("3:CALCULADORA");
+                Console.WriteLine("0:SALIR");
+                Console.WriteLine("----------------------------------------------------------------------");
+                Console.Write("************DIGITE SOLO EL NUMERO DE SU OPCION DESEADA**************:");
+
+                opcionMenu = Console.ReadLine();
+                Console.Clear();
+                switch (opcionMenu) {
+                    case "1":
+                        {
+                            Console.WriteLine("APARTADO DE AGENDA");
+                            break;
+                        }
+                    case "2":
+                        {
+                            Console.WriteLine("APARTADO CONVERSOR DE UNIDADES");
+                            break;
+                        }
+                    case "3":
+                        {
+                            Console.WriteLine("APARTADO CALCULADORA");
+                            break;
+                        }
+                    case "0":
+                        {
+                            Console.WriteLine("BYE!!!");
+                            break;
+                        }
+                    default:
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("OPCION INCORRECTA\n");
+
+                            break;
+                        }
+                        
+                }
+            } while (opcionMenu != "0");
+
 
 
 
