@@ -68,7 +68,7 @@ namespace PROYECTO_FINAL
                                         {
                                             Console.WriteLine("CONVERSOR DE MONEDAS");
                                             string convermoned;
-                                            CONVERSORMONEDAS convermon = new CONVERSORMONEDAS();
+                                            ConversorMonedas convermon = new ConversorMonedas();
                                             do
                                             {
                                                 Console.ForegroundColor = ConsoleColor.DarkCyan;

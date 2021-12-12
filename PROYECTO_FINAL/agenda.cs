@@ -8,6 +8,8 @@ namespace PROYECTO_FINAL
 {
     class Agenda
     {
+        List<string> contactos = new List<string>();
+        string[] contactos2 = new string[2];
         //FUNCION PARA MOSTRAR MENU AGENDA
         public void menuAgenda()
         {
@@ -56,11 +58,12 @@ namespace PROYECTO_FINAL
         {
             
             String opcion = "";
+            
 
 
             do
             {
-                
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.WriteLine("\n1:GUARDAR\n2:BUSCAR");
                 opcion = Console.ReadLine();
                 //Console.Clear();
@@ -73,7 +76,7 @@ namespace PROYECTO_FINAL
                         }
                     case "2":
                         {
-                            Console.WriteLine("APARTADO CONVERSOR DE UNIDADES");
+                            buscarContacto();
                             break;
                         }
                     case "0":
@@ -97,7 +100,32 @@ namespace PROYECTO_FINAL
         //FUNCION PARA GUARDAR CONTACTOS
         public void guardarContacto()
         {
+            string nombre, apellido;
+            string[] klk;
             Console.WriteLine("GUARDAR CONTACTO");
+            Console.WriteLine("INGRESE SU NOMBRE");
+            nombre = Console.ReadLine();
+            Console.WriteLine("INGRESE SU APELLIDO");
+            apellido = Console.ReadLine();
+
+            contactos.Add(nombre+";"+apellido);
+            contactos2 = new string[] { nombre,apellido};
+            
+
+            for (int i = 0; i < contactos2.Length; i++)
+            {
+                Console.WriteLine(contactos2[i]);
+            }
+            
+        }
+
+        public void buscarContacto()
+        {
+            string valor;
+            Console.WriteLine("INGRESE EL CONTACTO A BUSCAR");
+            valor = Console.ReadLine();
+
+            Console.WriteLine(contactos.IndexOf(valor, 0));
 
         }
         

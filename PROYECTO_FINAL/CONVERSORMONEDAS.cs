@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PROYECTO_FINAL
 {
-    class CONVERSORMONEDAS
+    class ConversorMonedas
     {
         public void usdApeso()
         {
