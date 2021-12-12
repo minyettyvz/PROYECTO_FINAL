@@ -16,9 +16,10 @@ namespace PROYECTO_FINAL
 
             do
             {
-                Console.WriteLine("APARTADO DE AGENDA\n 1:CONTACTOS\n 2:EVENTOS");
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("APARTADO DE AGENDA\n1:CONTACTOS\n2:EVENTOS\n0:ATRAS");
                 opcion = Console.ReadLine();
-                //Console.Clear();
+                Console.Clear();
                 switch (opcion)
                 {
                     case "1":
@@ -35,7 +36,7 @@ namespace PROYECTO_FINAL
                         }
                     case "0":
                         {
-                            Console.WriteLine("ATRAS");
+                            
                             break;
                         }
                     default:
@@ -59,7 +60,8 @@ namespace PROYECTO_FINAL
 
             do
             {
-                Console.WriteLine("\n1:GUARDAR\n 2:BUSCAR");
+                
+                Console.WriteLine("\n1:GUARDAR\n2:BUSCAR");
                 opcion = Console.ReadLine();
                 //Console.Clear();
                 switch (opcion)
@@ -81,6 +83,7 @@ namespace PROYECTO_FINAL
                         }
                     default:
                         {
+                            
                             Console.ForegroundColor = ConsoleColor.Red;
                             Console.WriteLine("OPCION INCORRECTA\n");
 
@@ -95,6 +98,7 @@ namespace PROYECTO_FINAL
         public void guardarContacto()
         {
             Console.WriteLine("GUARDAR CONTACTO");
+
         }
         
     }

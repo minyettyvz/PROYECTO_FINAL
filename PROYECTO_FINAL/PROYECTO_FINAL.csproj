@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Agenda.cs" />
     <Compile Include="Calculadora.cs" />
+    <Compile Include="CONVERSORMONEDAS.cs" />
+    <Compile Include="conversortemperatura.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
