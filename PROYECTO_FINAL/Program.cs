@@ -31,7 +31,7 @@ namespace PROYECTO_FINAL
                 Console.WriteLine("0:SALIR");
                 Console.WriteLine("----------------------------------------------------------------------");
                 Console.Write("************DIGITE SOLO EL NUMERO DE SU OPCION DESEADA**************:");
-
+                
                 opcionMenu = Console.ReadLine();
                 Console.Clear();
                 switch (opcionMenu) {
